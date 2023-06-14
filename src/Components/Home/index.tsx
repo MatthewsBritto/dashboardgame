@@ -1,7 +1,8 @@
 import Header from "../Header";
 import Image from "next/image";
 import prog from '../../../public/programming.svg'
-import { HomePageContainer } from "./styles";
+import { CenterInfos, HomePageContainer } from "./styles";
+import SocialIcons from "../Social";
 
 
 export default function Homepage(){
@@ -11,8 +12,13 @@ export default function Homepage(){
             <h1>
                 Matthews Britto      
             </h1>
-            <Image src={prog} width={700} height={350} alt=""/>
-            <p>Font - End Developer</p>
+
+            <CenterInfos>
+                <Image src={prog} width={700} height={350} alt=""/>
+                <p>Front End Developer</p>
+            </CenterInfos>
+
+            <SocialIcons/>
         </HomePageContainer>
     )
 }
