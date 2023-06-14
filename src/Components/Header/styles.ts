@@ -23,8 +23,14 @@ export const HeaderContainer = styled.ul`
 export const HeaderLink = styled.a<HeaderLinkProps>`
     
     color: white;
-    font-size: 1.4rem;
-    border-bottom: ${props => props.active ? '2px solid white' : 'none'};
+    font-size: 1rem;
     padding-bottom: .2rem;
+    letter-spacing: 2px;
+    cursor:pointer;
+    font-family:'Rubik Mono One';
+
+    &:hover{
+        border-bottom: 2px solid white;
+    }
 
 `

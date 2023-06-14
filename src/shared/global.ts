@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components"
 
 export const colorsStyles = {
     
-        blue: '#4B5D9B',
+        purple: '#6c63ff',
         blackBackground:'#111',
         activeRed:'#fc4461',
         darkPurple:'#171624',

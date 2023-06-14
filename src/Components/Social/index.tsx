@@ -5,11 +5,11 @@ export default function SocialIcons(){
     return (
         <IconsContainer>
             <li>
-                <AiFillGithub size={35}/>
+                <p><AiFillGithub size={35} color="white"/></p>
                 <span>Github</span>
             </li>
             <li>
-                <AiFillLinkedin size={35}/>
+                <p><AiFillLinkedin size={35} color="white"/></p>
                 <span>Linkedin</span>
             </li>
 

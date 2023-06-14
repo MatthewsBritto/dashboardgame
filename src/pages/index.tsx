@@ -1,3 +1,4 @@
+import About from "@/Components/About";
 import Header from "@/Components/Header";
 import Homepage from "@/Components/Home";
 import { Container } from "@/shared/styles/pages";
@@ -8,6 +9,7 @@ export default function Home(){
         <Container>
             <Header/>
             <Homepage/>
+            <About/>
         </Container>
     )
 }
