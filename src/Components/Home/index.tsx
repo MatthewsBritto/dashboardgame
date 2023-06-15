@@ -8,7 +8,7 @@ import SocialIcons from "../Social";
 export default function Homepage(){
 
     return(
-        <HomePageContainer>
+        <HomePageContainer active="Skills">
             <Name>
                 MATTHEWS BRITTO 
             </Name>

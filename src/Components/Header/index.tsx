@@ -1,16 +1,27 @@
 import { HeaderContainer,HeaderLink } from "./styles";
 
 
-export default function Header(){
+export interface SectionProps {
+    active: 'Home' | 'Skills' | 'Portfólio'
+}
 
+export default function Header() {
+
+    var links = ['Home','Skills','Portfólio']
+
+    function teste(item:string){
+        return console.log(item)
+    }
 
 
     return (
         <HeaderContainer>
             <div>
-                <HeaderLink active={false}>Home</HeaderLink>
-                <HeaderLink active={false}>Skills</HeaderLink>
-                <HeaderLink active={false}>Portfólio</HeaderLink>
+                {links && links.map((item) => {
+                    return(
+                        <HeaderLink key={item} onClick={ () =>  teste(item) } active>{item}</HeaderLink>
+                    )
+                })}
             </div>
         </HeaderContainer>
     )

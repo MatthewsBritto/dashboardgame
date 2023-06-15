@@ -1,11 +1,17 @@
 import styled from "styled-components";
+import { SectionProps } from "../Header";
 
-export const HomePageContainer = styled.main`
+
+export const HomePageContainer = styled.main<SectionProps>`
 
     width: 100%;
     padding-top: 2rem;
-    height: 100vh;
+    height: calc(100vh - 10rem);
     /* display: none; */
+    position: absolute;
+    background-color: ${props => props.theme.purple};
+    z-index: ${props => props.active ==='Home' ? 5 : -1} ;
+
 
 `
 
